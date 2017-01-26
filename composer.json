@@ -1,5 +1,5 @@
 {
-    "name": "milqmedia/mq-redis-session",
+    "name": "n0v3xx/mq-redis-session",
     "description": "Zend Framework 2 redis session storage",
     "type": "library",
     "keywords": ["redis","session","storage","zf2"],
