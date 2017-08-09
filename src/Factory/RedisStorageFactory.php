@@ -12,7 +12,8 @@
 
 namespace MQRedisSessionStorage\Factory;
 
-use Zend\ServiceManager\FactoryInterface;
+use Interop\Container\ContainerInterface;
+use Zend\ServiceManager\Factory\FactoryInterface;
 use Zend\ServiceManager\ServiceLocatorInterface;
 use MQRedisSessionStorage\Storage\RedisStorage;
 
@@ -23,12 +24,12 @@ use MQRedisSessionStorage\Storage\RedisStorage;
 class RedisStorageFactory implements FactoryInterface
 {
     /**
-     * @param \Zend\ServiceManager\ServiceManager $container
+     * @param ContainerInterface $container
      * @param string $requestedName
      * @param array|NULL $options
      * @return RedisStorage
      */
-    public function __invoke($container, $requestedName, array $options = NULL)
+    public function __invoke(ContainerInterface $container, $requestedName, array $options = NULL)
     {
         $conf = $container->get('Config');
         $config = null;
