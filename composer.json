@@ -4,7 +4,7 @@
     "type": "library",
     "keywords": ["redis","session","storage","zf2"],
     "homepage": "https://github.com/milqmedia/MQRedisSessionStorage",
-    "license": "New BSD License",
+    "license": "BSD-4-Clause",
     "authors": [
         {
             "name": "Johan Kuijt",
